@@ -48,6 +48,6 @@ btn.addEventListener("click", async(evt)=>{
  let data=await response.json();
  let rs=data[toC];
  let msg=document.querySelector(".msg");
- msg.innerText=amount.value+" "+document.querySelector(".from select").value+" = "+rs+" "+document.querySelector(".to select").value;
+ msg.innerText=amount.value+" "+document.querySelector(".from select").value+" = "+rs*amount.value+" "+document.querySelector(".to select").value;
 
 });
