@@ -1,0 +1,91 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+   margin-top: 80px;
+   border-radius: 14px;
+   display: flex;
+   justify-content: start;
+   align-items: start;
+   width: 310px;
+   height: 350px;
+   flex-direction: column;
+   background-color: white;
+   padding-bottom: 20px;
+   padding-top: 20px;
+   padding-left: 20px;
+}
+h2{
+   padding-bottom: 30px;
+}
+body{
+   background-color: rgba(246, 244, 132, 0.858);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+input{
+   margin-bottom:10px ;
+   width: 250px;
+   height: 40px;
+   font-size: 20px;
+   padding-left: 10px;
+   border-radius: 5px;
+   margin-bottom: 50px;
+}
+.df{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.dropdown{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+.cont2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.from p,.to p{
+   font-size: 15px;
+   font-weight:bolder;
+   
+}
+img{
+   height: 40px;
+   width: 40px;
+   margin-right: 4px;
+}
+select{
+   height: 25px;
+   width: 60px;
+   font-size: 15px;
+}
+.msg{
+   margin-top: 30px;
+}
+button{
+   margin: 10px;
+   width: 240px;
+   height: 40px;
+   border-radius: 8px;
+   background-color: rgb(255, 0, 234);
+   color: white;
+   font-size: large;
+   font-weight: bolder;
+   cursor: pointer;
+}
+.icon{
+   margin-top: 25px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
