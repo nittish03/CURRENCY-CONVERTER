@@ -1,8 +1,8 @@
-const base_URL="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
+const base_URL="https://v6.exchangerate-api.com/v6/fb122cb72688b7a9eb54dc17/pair/";
 
 const selects=document.querySelectorAll(".dropdown select");
 
-const btn=document.querySelector("form button");
+const btn=document.querySelector(".btn");
 
 
 const updateFlag=(element)=>{
@@ -34,19 +34,20 @@ for(let select of selects){
         updateFlag(evt.target);
     });
 }
-const fromC=document.querySelector(".from select").value.toLowerCase();
 
-const toC=document.querySelector(".to select").value.toLowerCase();
 
 btn.addEventListener("click", async(evt)=>{
     evt.preventDefault();
+    const fromC=document.querySelector(".select1").value.toUpperCase();
+const toC=document.querySelector(".select2").value.toUpperCase();
+
     let amount=document.querySelector("#amount input");
-    let newUrl="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/"+fromC+"/"+toC+".json";
-    //another way for the same code
-    // let newUrl=`${base_URL}/${fromC}/${toC}.json`
+    let newUrl=`${base_URL}/${fromC}/${toC}`
  let  response=await fetch(newUrl);
  let data=await response.json();
- let rs=data[toC];
+ console.log(data);
+ let rs=data.conversion_rate;
+ console.log(rs);
  let msg=document.querySelector(".msg");
  msg.innerText=amount.value+" "+document.querySelector(".from select").value+" = "+rs*amount.value+" "+document.querySelector(".to select").value;
 
