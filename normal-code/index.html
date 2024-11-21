@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENCY-CONVERTER</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2>CURRENCY CONVERTER</h2>
+        
+        <div id="amount">
+          <input type="number" placeholder="Enter amount">
+        </div>
+        
+            <div class="dropdown">
+              <div class="from dfc">
+                <p>FROM</p>
+                <div class="df">
+                  <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag">
+                  <select class="select1">
+                    <option value="USD">USD</option>
+                    <!-- Add more options -->
+                  </select>
+                </div>
+              </div>
+              
+              <div class="icon">↔️</div>
+              
+              <div class="to dfc">
+                <p>TO</p>
+                <div class="df">
+                  <img src="https://flagsapi.com/IN/flat/64.png" alt="IN Flag">
+                  <select class="select2">
+                    <option value="INR">INR</option>
+                    <!-- Add more options -->
+                  </select>
+                </div>
+              </div>
+            </div>
+
+        
+        <div class="cont2">
+          <p class="msg">ENTER TO GET EXCHANGE VALUE</p>
+          <button class="btn">GET EXCHANGE RATE</button>
+        </div>
+      </div>
+      <script src="codes.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
